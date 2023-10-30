@@ -58,8 +58,6 @@ function smoothScrollTo(y, time) {
 
 
 
----
----
 
 /*!
  * Basically Basic Jekyll Theme 1.4.5
