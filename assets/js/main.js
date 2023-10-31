@@ -83,38 +83,13 @@ function animateMenuItems() {
   }
 };
 
-var myWrapper = document.querySelector('.wrapper');
-var myMenu = document.querySelector('.sidebar');
 var myToggle = document.querySelector('.toggle');
-var myInitialContent = document.querySelector('.initial-content');
+var myInitialContent = document.querySelector('.wraper');
 var mySearchContent = document.querySelector('.search-content');
 var mySearchToggle = document.querySelector('.search-toggle');
 
-// Toggle sidebar visibility
-function toggleClassMenu() {
-  myMenu.classList.add('is--animatable');
-  if (!myMenu.classList.contains('is--visible')) {
-    myMenu.classList.add('is--visible');
-    myToggle.classList.add('open');
-    myWrapper.classList.add('is--pushed');
-  } else {
-    myMenu.classList.remove('is--visible');
-    myToggle.classList.remove('open');
-    myWrapper.classList.remove('is--pushed');
-  }
-}
 
-// Animation smoother
-function OnTransitionEnd() {
-  myMenu.classList.remove('is--animatable');
-}
-
-myMenu.addEventListener('transitionend', OnTransitionEnd, false);
 myToggle.addEventListener('click', function () {
-  toggleClassMenu();
-  animateMenuItems();
-}, false);
-myMenu.addEventListener('click', function () {
   toggleClassMenu();
   animateMenuItems();
 }, false);
