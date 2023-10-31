@@ -83,7 +83,7 @@ function animateMenuItems() {
   }
 };
 
-var myInitialContent = document.querySelector('.wraper');
+var myInitialContent = document.querySelector('.wrapper');
 var mySearchContent = document.querySelector('.search-content');
 var mySearchToggle = document.querySelector('.search-toggle');
 
