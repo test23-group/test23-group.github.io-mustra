@@ -8,6 +8,28 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch-theme-algolia.min.css">
 
 <script>
+
+var myInitialContent = document.querySelector('.wrapper');
+var mySearchContent = document.querySelector('.search-content');
+var mySearchToggle = document.querySelector('.search-toggle');
+
+if (mySearchToggle) {
+  mySearchToggle.addEventListener('click', function () {
+    toggleClassSearch();
+  }, false);
+}
+
+// Toggle search input and content visibility
+function toggleClassSearch() {
+  mySearchContent.classList.toggle('is--visible');
+  myInitialContent.classList.toggle('is--hidden');
+  setTimeout(function () {
+    document.querySelector('.search-content input').focus();
+  }, 400);
+}
+
+
+  
 // Instanciating InstantSearch.js with Algolia credentials  
 
 const search = instantsearch({
