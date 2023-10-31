@@ -83,16 +83,10 @@ function animateMenuItems() {
   }
 };
 
-var myToggle = document.querySelector('.toggle');
 var myInitialContent = document.querySelector('.wraper');
 var mySearchContent = document.querySelector('.search-content');
 var mySearchToggle = document.querySelector('.search-toggle');
 
-
-myToggle.addEventListener('click', function () {
-  toggleClassMenu();
-  animateMenuItems();
-}, false);
 if (mySearchToggle) {
   mySearchToggle.addEventListener('click', function () {
     toggleClassSearch();
