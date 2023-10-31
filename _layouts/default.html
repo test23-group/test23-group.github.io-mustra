@@ -19,9 +19,28 @@
       <div class="wrapper">
         {{ content }}
       </div>
+
+  {% if site.search %}
+    <div class="canvas">
+      <div class="wrapper">
+        <div class="search-content">
+          <div class="inner">
+            <div tabindex="-1" class="search-searchbar"></div>
+            <div class="search-hits"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+      
     </main>
 
     {%- include views/footer.html -%}
+
+  {% if site.search %}
+    {%- include extensions/algolia-search-scripts.html -%}
+  {% endif %}
 
   </body>
 </html>
