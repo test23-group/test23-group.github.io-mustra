@@ -51,7 +51,7 @@ search:  true
 search_full_content: false # true, false (default)
 search_provider: algolia
 algolia:
-  application_id: O0X085HZBV
+  application_id: ${{ secrets.ALGOLIA_APP_ID }}
   index_name: aa11
   search_only_api_key: 7b83c0bbdcbc061185093b7e172bfa28
   powered_by: false
