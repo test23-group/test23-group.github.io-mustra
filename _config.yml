@@ -51,11 +51,10 @@ search:  true
 search_full_content: false # true, false (default)
 search_provider: algolia
 algolia:
-  application_id: ${{ env.ALGOLIA_APP_ID }}
+  application_id: O0X085HZBV
   index_name: aa11
   search_only_api_key: 7b83c0bbdcbc061185093b7e172bfa28
   powered_by: false
-  
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
